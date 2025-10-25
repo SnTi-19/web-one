@@ -1,0 +1,25 @@
+/* Background color */
+body {
+  background-color: #ebd6fd;
+}
+
+/* Headings */
+h1 {
+  color: #ce47ff; /* HEX color */
+  font-size: 36px; /* text size change */
+}
+
+h2 {
+  color: blueviolet; /* named color */
+}
+
+/* Paragraph */
+p {
+  color: #5e2a84;
+}
+
+/* Example of a class */
+.highlight {
+  color: white;
+  background-color: #b868e0;
+}
