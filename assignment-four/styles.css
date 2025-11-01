@@ -1,0 +1,95 @@
+/* === General Page Styles === */
+body {
+  background-color: #f3e8ff;
+  color: #222;
+  margin: 60px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* Paragraph spacing and layout */
+p {
+  margin: 12px 0;
+}
+
+/* === Display / Title Fonts === */
+.p1 {
+  font-family: "Abril Fatface", serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.p2 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* === Serif / Reading Fonts === */
+.p7 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 26px;
+}
+
+.p6 {
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.p4 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* === Script / Decorative Font === */
+.p5 {
+  font-family: "Mea Culpa", cursive;
+  font-size: 40px;
+  line-height: 1.4;
+  margin: 50px 0 60px 0;
+}
+
+/* === Typewriter / Rough Fonts === */
+.p8 {
+  font-family: "Special Elite", system-ui;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+/* === Gothic / Fraktur Fonts === */
+.p3 {
+  font-family: "Grenze Gotisch", serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-top: 60px;
+}
+
+.p9 {
+  font-family: "UnifrakturCook", cursive;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 60px;
+}
+
+/* === Alignment and balance === */
+.p1, .p2, .p7 {
+  text-align: left;
+}
+
+.p5, .p6 {
+  text-align: center;
+}
+
+.p3, .p8, .p9 {
+  text-align: right;
+}
+
