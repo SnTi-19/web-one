@@ -1,0 +1,170 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+/* BASE CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.logo {
+  width: 170px;
+  height: auto;
+}
+
+.main-nav a {
+  margin-left: 22px;
+  text-decoration: none;
+  color: #1a2b3f;
+  font-size: 15px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  margin-bottom: 14px;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+/* BUTTONS */
+.btn-dark {
+  padding: 10px 20px;
+  background: rgba(40,45,60,0.9);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-outline {
+  padding: 10px 22px;
+  border: 2px solid #1a2b3f;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* WELCOME */
+.welcome {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.welcome h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  max-width: 700px;
+  margin: 12px auto 22px;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.welcome-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* DIVIDER */
+.divider {
+  border: none;
+  border-top: 1px solid #e2e2e2;
+  margin: 20px 0 40px;
+}
+
+/* ZIG-ZAG CALLOUT SECTIONS */
+.callout {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 60px 0;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.callout-img {
+  width: 46%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.callout-text {
+  width: 54%;
+}
+
+.callout-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #24324a;
+}
+
+.callout-text p {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #f4f4f4;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 12px;
+}
+
+.payments {
+  width: 150px;
+}
+
