@@ -1,156 +1,146 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif;
-  color: #333;
+  font-family: "Lato", sans-serif;
+  color: #222;
+  background: #fff;
 }
 
-/* BASE CONTAINER */
 .container {
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 /* NAV */
-.nav {
+.nav-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
+  padding: 20px 0;
 }
 
-.logo {
-  width: 170px;
-  height: auto;
-}
+.logo { width: 180px; height: auto; }
 
 .main-nav a {
-  margin-left: 22px;
+  margin-left: 24px;
   text-decoration: none;
-  color: #1a2b3f;
+  color: #1b2430;
   font-size: 15px;
 }
 
 /* HERO */
-.hero {
-  position: relative;
-}
-
-.hero-img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-}
+.hero { position: relative; }
+.hero-img { width: 100%; height: 420px; object-fit: cover; display: block; }
 
 .hero-overlay {
   position: absolute;
   top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   text-align: center;
+  color: white;
+  width: 100%;
 }
 
 .hero-overlay h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 38px;
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.55);
   margin-bottom: 14px;
-  text-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
 
-/* BUTTONS */
 .btn-dark {
-  padding: 10px 20px;
-  background: rgba(40,45,60,0.9);
+  background: #24324a;
   color: white;
   border: none;
+  padding: 10px 18px;
   cursor: pointer;
-  font-size: 14px;
-}
-
-.btn-outline {
-  padding: 10px 22px;
-  border: 2px solid #1a2b3f;
-  background: transparent;
-  cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /* WELCOME */
 .welcome {
   text-align: center;
-  padding: 50px 0;
+  padding: 50px 0 35px;
 }
 
 .welcome h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #24324a;
 }
 
-.welcome p {
-  max-width: 700px;
-  margin: 12px auto 22px;
-  font-size: 16px;
-  color: #444;
-  line-height: 1.6;
+.welcome-text {
+  max-width: 740px;
+  margin: 0 auto 20px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
 }
 
 .welcome-buttons {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 14px;
 }
 
-/* DIVIDER */
+.btn-outline {
+  padding: 10px 22px;
+  border: 2px solid #24324a;
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+}
+
 .divider {
   border: none;
-  border-top: 1px solid #e2e2e2;
-  margin: 20px 0 40px;
+  border-top: 1px solid #ddd;
+  margin: 18px 0 30px;
 }
 
-/* ZIG-ZAG CALLOUT SECTIONS */
-.callout {
+.zig {
   display: flex;
-  align-items: center;
-  gap: 32px;
-  margin: 60px 0;
+  gap: 40px;
+  align-items: flex-start; 
+  padding: 42px 0;
 }
 
-.reverse {
-  flex-direction: row-reverse;
-}
+.zig-col { width: 50%; }
 
-.callout-img {
-  width: 46%;
-  height: 280px;
+.zig-img {
+  width: 100%;
+  height: 260px;
   object-fit: cover;
-  border-radius: 4px;
+  display: block;
 }
 
-.callout-text {
-  width: 54%;
-}
-
-.callout-text h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  margin-bottom: 10px;
+.zig-text h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
   color: #24324a;
+  margin-bottom: 12px;
 }
 
-.callout-text p {
-  font-size: 15.5px;
-  line-height: 1.6;
-  color: #444;
+.zig-text p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 430px;
 }
+
+.right-block { text-align: center; }
+.right-block p { margin: 0 auto; }
+
+.left-block { text-align: left; }
+.left-block p { margin: 0; }
 
 /* FOOTER */
 .site-footer {
   background: #f4f4f4;
-  padding: 40px 0;
-  margin-top: 60px;
+  padding: 35px 0;
+  margin-top: 40px;
 }
 
 .footer-inner {
@@ -159,12 +149,27 @@ body {
   align-items: center;
 }
 
-.footer-logo {
-  width: 150px;
-  margin-bottom: 12px;
-}
+.footer-logo { width: 160px; margin-bottom: 10px; }
 
-.payments {
-  width: 150px;
-}
+.footer-right { text-align: right; }
+.cart { font-size: 11px; color: #555; margin-bottom: 10px; }
+.payments { width: 160px; height: auto; }
 
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .main-nav { display: none; }
+
+  .hero-img { height: 280px; }
+  .hero-overlay h1 { font-size: 28px; }
+
+  .zig {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .zig-col { width: 100%; }
+
+  .left-block { text-align: center; }
+  .left-block p { margin: 0 auto; }
+}
